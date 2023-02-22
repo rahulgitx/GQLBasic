@@ -1,0 +1,17 @@
+
+type Author {
+	id: Int
+	name: String
+	age: Int
+}
+
+# Root
+type Query {
+	findAllAuthors: [Author]
+	countAuthors: Int!
+}
+  
+# Root
+type Mutation {
+	createAuthor(id:Int, name: String, age: Int): Author
+}
